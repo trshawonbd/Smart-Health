@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/nav_home_doctor"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/nav_time_schedule_doctor"
+        android:icon="@drawable/ic_schedule"
+        android:title="@string/time_schedule" />
+
+    <item
+        android:id="@+id/nav_message_doctor"
+        android:icon="@drawable/ic_baseline_message_24"
+        android:title="@string/message_patient" />
+
+    <item
+        android:id="@+id/nav_request_doctor"
+        android:icon="@drawable/ic_request"
+        android:title="@string/patient_request" />
+
+    <item
+        android:id="@+id/nav_accept_booking_doctor"
+        android:icon="@drawable/ic_accept"
+        android:title="@string/accept_patients_bookings" />
+
+    <item
+        android:id="@+id/nav_logout_doctor"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/logout" />
+
+
+
+</menu>

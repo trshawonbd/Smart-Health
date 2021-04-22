@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">SmartHealth</string>
+    <string name="content_desc">This project image</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home">Home</string>
+
+    <string-array name="select_login_mood">
+        <item>--select mode--</item>
+        <item>As Doctor</item>
+        <item>As Patient</item>
+    </string-array>
+    <string-array name="choose_doctor">
+        <item>--select Doctor--</item>
+        <item>Doctor A</item>
+        <item>Doctor B</item>
+        <item>Doctor C</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="doctors_schedule">Doctors Schedule</string>
+    <string name="message">Message Doctor</string>
+    <string name="history">History</string>
+    <string name="logout">Logout</string>
+    <string name="call_ambulance">Call Ambulance</string>
+    <string name="call_doctors">Call Doctor</string>
+    <string name="see_prescription">See prescription</string>
+    <string name="time_schedule">Time Schedule</string>
+    <string name="patient_request">Patient Request</string>
+    <string name="accept_patients_bookings">Accept Patients bookings</string>
+    <string name="please_wait">Please Wait…</string>
+    <string name="temperature_c">temperature °C</string>
+    <string name="before_eating_glucose">Glucose Level</string>
+    <string name="after_eating_glucose">After Eating Glucose</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_start_time">Select Start Time</string>
+    <string name="select_end_time">Select End Time</string>
+    <string name="to">To</string>
+    <string name="smart_health">Smart Health</string>
+    <string name="smart_health_care">Smart Health Care</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="don_t_you_have_an_account">Don\'t You have an account?</string>
+    <string name="register">Register</string>
+    <string name="message_patient">Message Patient</string>
+</resources>

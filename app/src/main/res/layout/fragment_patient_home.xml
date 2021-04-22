@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.patient.PatientHomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/tvPatientTitle"
+            android:text=""
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/login_bg"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <androidx.cardview.widget.CardView
+                    app:cardElevation="3dp"
+                    app:cardCornerRadius="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:background="@color/login_bg"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+                        <TextView
+                            android:text="BP"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"/>
+                        <EditText
+                            android:id="@+id/et_bp_up_patient"
+                            android:hint="UP"
+                            android:background="@drawable/patient_home_et_shape"
+                            android:inputType="numberDecimal"
+                            android:layout_marginStart="5dp"
+                            android:padding="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.4"/>
+                        <TextView
+                            android:text="/"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"/>
+                        <EditText
+                            android:id="@+id/et_bp_down_patient"
+                            android:hint="DOWN"
+                            android:background="@drawable/patient_home_et_shape"
+                            android:inputType="numberDecimal"
+                            android:padding="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.4"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    app:cardElevation="3dp"
+                    app:cardCornerRadius="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:background="@color/login_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+                        <TextView
+                            android:text="Temp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"/>
+                        <EditText
+                            android:id="@+id/et_temperature_patient"
+                            android:inputType="numberDecimal"
+                            android:layout_width="0dp"
+                            android:background="@drawable/patient_home_et_shape"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:hint="@string/temperature_c"
+                            android:padding="10dp"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="3dp"
+                    android:layout_marginTop="5dp"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:background="@color/login_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="5">
+                        <TextView
+                            android:text="SPO2"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"/>
+                        <EditText
+                            android:id="@+id/et_spo2_patient"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:hint="SPO2"
+                            android:background="@drawable/patient_home_et_shape"
+                            android:padding="10dp"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:cardElevation="3dp"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:background="@color/login_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="5">
+                        <TextView
+                            android:text="ECG"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"/>
+                        <EditText
+                            android:id="@+id/et_ecg_patient"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:hint="ok / not ok"
+                            android:background="@drawable/patient_home_et_shape"
+                            android:padding="10dp"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="3dp"
+                    android:layout_marginTop="5dp"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:background="@color/login_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="5">
+                        <TextView
+                            android:text="Before Eating Glucose"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"/>
+                        <EditText
+                            android:id="@+id/et_gl_bfr_eat_patient"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:background="@drawable/patient_home_et_shape"
+                            android:hint="@string/before_eating_glucose"
+                            android:padding="10dp"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="3dp"
+                    android:layout_marginTop="5dp"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:background="@color/login_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:weightSum="5">
+                        <TextView
+                            android:text="@string/after_eating_glucose"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"/>
+                        <EditText
+                            android:id="@+id/gl_aftr_eat_patient"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:background="@drawable/patient_home_et_shape"
+                            android:hint="Glucose Level"
+                            android:padding="10dp"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                    <Button
+                        android:id="@+id/btnSubmitPatientId"
+                        android:text="Submit"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:background="@drawable/button_custom_shape"
+                        android:layout_marginTop="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btnSubmitSensorId"
+                    android:text="Sync from device"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:background="@drawable/button_custom_shape"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

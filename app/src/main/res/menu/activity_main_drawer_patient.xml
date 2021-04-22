@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home_patient"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/nav_schedule_patient"
+        android:icon="@drawable/ic_schedule"
+        android:title="@string/doctors_schedule" />
+
+    <item
+        android:id="@+id/nav_msg_patient"
+        android:icon="@drawable/ic_baseline_message_24"
+        android:title="@string/message" />
+
+
+    <item
+        android:id="@+id/nav_call_doctor_patient"
+        android:icon="@drawable/ic_baseline_call_24"
+        android:title="@string/call_doctors" />
+
+    <item
+        android:id="@+id/nav_see_prescription_patient"
+        android:icon="@drawable/ic_baseline_sticky_note_2_24"
+        android:title="@string/see_prescription" />
+
+    <item
+        android:id="@+id/nav_call_ambulance_patient"
+        android:icon="@drawable/ic_ambulance"
+        android:title="@string/call_ambulance" />
+
+
+    <item
+        android:id="@+id/nav_history_patient"
+        android:icon="@drawable/ic_baseline_history_24"
+        android:title="@string/history" />
+
+    <item
+        android:id="@+id/nav_logout_patient"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/logout" />
+
+</menu>

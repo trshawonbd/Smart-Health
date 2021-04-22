@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#448AFF</color>
+    <color name="colorPrimaryDark">#2962FF</color>
+    <color name="colorAccent">#ef0078</color>
+
+    <color name="view">#D6D7D7</color>
+    <color name="bg">#EBF5FB</color>
+    <color name="hint">#989A9C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF1744</color>
+
+    <color name="msg_color">#FEF5E7</color>
+    <color name="login_bg">#EBF5FB</color>
+</resources>
